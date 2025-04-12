@@ -22,4 +22,61 @@
                 <li><a href="./site_internet.html">Tarifs & Info Sites Internet/Web</a></li>
             </ul>
         </div>
-    </nav> 
+    </nav>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-content">
+                <a href="index.html">
+                    <img class="logo_footer" src="../images/etherya_site_logo.jpg" alt="img_logo_footer">
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 - PROJECT : DELTA| Tous droits réservés.</p>
+        </div>
+    
+        <!-- Regroupe support + social pour le responsive -->
+        <div class="footer-icons">
+            <div class="footer-support">
+                <p>Support</p>
+                <a href="https://discord.gg/PzTHvVKDxN" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_support_logo.jpg" alt="Support Discord">
+                </a>
+            </div>
+    
+            <div class="footer-socials">
+                <a href="https://discord.gg/N4Re6Yck7y" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_discord_logo.jpg" alt="Discord">
+                </a>
+                <a href="https://www.tiktok.com/@etherya.sy" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_tiktok_logo.jpg" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/sy_etherya/" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_instagram_logo.jpg" alt="Instagram">
+                </a>
+                <a href="https://x.com/EtheryaSy" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_twitter_logo.jpg" alt="X">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menu = document.querySelector(".menu");
+    
+            menuToggle.addEventListener("click", function() {
+                menu.classList.toggle("show");
+            });
+    
+            // Fermer le menu quand on clique en dehors
+            document.addEventListener("click", function(event) {
+                if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                    menu.classList.remove("show");
+                }
+            });
+        });
+    </script>   
+</body>
+</html>
