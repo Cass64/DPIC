@@ -17,29 +17,63 @@
             <ul class="menu" id="menu">
                 <li id="page_actuelle"><a href="#">Accueil</a></li>
                 <li><a href="./bot_discord.html">Tarifs & Info Bots Discord</a></li>
-                <li><a href=".graphisme.html">Tarifs & Info Graphisme</a></li>
+                <li><a href="./graphisme.html">Tarifs & Info Graphisme</a></li>
                 <li><a href="./serveur_discord.html">Tarifs & Info Serveur Discord</a></li>
                 <li><a href="./site_internet.html">Tarifs & Info Sites Internet/Web</a></li>
             </ul>
         </div>
-    </nav> 
-    <h1 id="titre_accueil">Bienvenu sur le site officiel de PROJECT : DELTA !</h1>
-    <h2 class="titre2_accueil"></h2>
+    </nav>
+    <h1 id="titre_accueil">Bienvenue sur le site officiel de PROJECT : DELTA !</h1>
+    <h2 class="titre3_accueil">LE COMMENCEMENT</h2>
+    <div class="embed_accueil2">
+        <img class="img_embed_accueil" src="../images/image_embed_accueil_presentation.jpg" alt="img_embed">
+        <div class="text_embed_accueil">
+            <p>
+                Ce projet est né de la rencontre entre deux passionnés :
+                cass64, un étudiant en informatique, et Isey, fondateur du serveur Discord Etherya.
+            </p>
+        </div>
+    </div>
+    <h2 class="titre2_accueil">CASS64</h2>
     <div class="embed_accueil">
         <img class="img_embed_accueil" src="../images/pp_isey.png" alt="img_embed">
         <div class="text_embed_accueil">
             <p>
+                Tout a commencé lorsque cass64, déjà plongé dans le développement web en créant son propre site,
+                a rejoint le serveur d’Isey. Rapidement, une connexion s’est faite :
+                Isey venait tout juste de refondre son serveur et avait une grande ambition ;
+                mettre en place une économie avancée pour dynamiser sa communauté.
             </p>
         </div>
     </div>
-    <h2 class="titre3_accueil"></h2>
+    <h2 class="titre3_accueil">ISEY</h2>
     <div class="embed_accueil2">
         <img class="img_embed_accueil" src="../images/pp_cass.png" alt="img_embed">
         <div class="text_embed_accueil">
             <p>
+                Voyant cass64, il lui demande de développer un bot sur mesure pour gérer
+                l'économie du serveur. De fil en aiguille, le projet prend forme, et l’idée d’un simple bot
+                devient un vrai système complet. L’intérêt d’Isey pour le développement grandit,
+                au point qu’il se met lui aussi à coder ses propres bots.
             </p>
         </div>
     </div>
+    <h2 class="titre2_accueil">NOTRE PROJET</h2>
+    <div class="embed_accueil">
+        <img class="img_embed_accueil" src="../images/image_embed_accueil_final.jpg" alt="img_embed">
+        <div class="text_embed_accueil">
+            <p>
+                De cette collaboration naturelle est née une vision commune :
+                mettre leurs compétences au service des autres. Ensemble, ils décident de lancer un projet plus vaste,
+                proposant la création de bots Discord, de serveurs configurés de A à Z, de sites web sur mesure,
+                et même du graphisme personnalisé.
+
+                Aujourd’hui, ils unissent leurs forces pour offrir des solutions complètes
+                et accessibles à toutes les communautés en quête de qualité et d’originalité.
+            </p>
+        </div>
+    </div>
+    <button id="scroll-button" class="scroll-button">↓</button>
     <footer>
         <div class="footer-top">
             <div class="footer-content">
@@ -48,53 +82,62 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>© 2025 - PROJECT : DELTA| Tous droits réservés.</p>
         </div>
-    
+
         <!-- Regroupe support + social pour le responsive -->
         <div class="footer-icons">
             <div class="footer-support">
                 <p>Support</p>
-                <a href="https://discord.gg/PzTHvVKDxN" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.gg/wG8jCA7CZV" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_support_logo.jpg" alt="Support Discord">
                 </a>
             </div>
-    
+
             <div class="footer-socials">
-                <a href="https://discord.gg/N4Re6Yck7y" target="_blank" rel="noopener noreferrer">
-                    <img class="logo_footer" src="../images/etherya_discord_logo.jpg" alt="Discord">
+                <a href="https://discord.com/oauth2/authorize?client_id=1356693934012891176" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_discord_logo.jpg" alt="Bot Delta">
                 </a>
                 <a href="https://www.tiktok.com/@etherya.sy" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_tiktok_logo.jpg" alt="TikTok">
                 </a>
-                <a href="https://www.instagram.com/sy_etherya/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/delta.projet/" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_instagram_logo.jpg" alt="Instagram">
                 </a>
-                <a href="https://x.com/EtheryaSy" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/Delta_Proj_Isey" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_twitter_logo.jpg" alt="X">
                 </a>
             </div>
         </div>
     </footer>
+    <!-- Script Scroll + Menu -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollButton = document.getElementById('scroll-button');
+            scrollButton.addEventListener('click', () => {
+                window.scrollBy({
+                    top: window.innerHeight,
+                    behavior: 'smooth'
+                });
+            });
+
             const menuToggle = document.querySelector(".menu-toggle");
             const menu = document.querySelector(".menu");
-    
-            menuToggle.addEventListener("click", function() {
+
+            menuToggle.addEventListener("click", () => {
                 menu.classList.toggle("show");
             });
-    
-            // Fermer le menu quand on clique en dehors
-            document.addEventListener("click", function(event) {
+
+            document.addEventListener("click", (event) => {
                 if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
                     menu.classList.remove("show");
                 }
             });
         });
-    </script>   
+    </script>
 </body>
 
 </html>
