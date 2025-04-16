@@ -6,6 +6,7 @@ body, html {
     font-family: 'Alkatra', serif;
     overflow-x: hidden; /* Empêche le scroll horizontal */
     width: 100%; /* Assure que tout s'adapte bien */
+    color:white
 }
 
 body {
@@ -239,7 +240,7 @@ footer {
 .footer-socials {
     position: absolute;
     right: 150px;
-    bottom: 70px;
+    bottom: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -534,8 +535,9 @@ nav {
 /*----------------- Tarifs ----------------- */
 
 .tarifs-section {
-    padding: 50px 20px;
-    text-align: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .titre-tarifs {
@@ -548,29 +550,26 @@ nav {
 .tarifs-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem;
     justify-content: center;
-    gap: 100px;
+    margin-bottom: 2rem;
 }
 
 .tarif-card {
-    background: rgb(144, 143, 143);
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    width: 450px;
-    height: 250px;
-    padding: 30px 20px;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    transform: scale(1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #202020;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex: 1 1 250px;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarif-card:hover {
-    transform: scale(1.10) translateY(-10px);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom right, #b0bad2, #b0bad2);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
 }
 
 .tarif-card h3 {
@@ -585,27 +584,48 @@ nav {
     color: #333;
 }
 
+.tarif-card h3,
+.tarif-card p,
+.tarif-card strong {
+    color: #993c9c; /* forcer un texte bien lisible */
+}
+
 /**----------------- Description service----------------- */
 .description-embed {
-    background: rgb(255, 255, 255);
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin: 0 auto 60px auto;
-    width: 1500px;
-    transition: all 0.4s ease;
+    background-color: #282828;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    max-width: 100%;
 }
 
 .description-embed:hover {
     transform: scale(1.02) translateY(-5px);
-    background: linear-gradient(to bottom right, #d9e2ef, #d9e2ef);
+    background: linear-gradient(to bottom right, #294a79, #2a5186);
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
 }
 
 .description-text {
-    font-size: 1.5rem;
     line-height: 1.6;
     color: #333;
     font-weight: 400;
     text-align: justify;
 }
+
+
+
+.prix-tarif {
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.texte-tarif {
+    font-size: 100px;
+    color: #222;
+    line-height: 1.6;
+    margin-top: 10px;
+} 

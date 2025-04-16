@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
-    <title>PROJECT : DELTA</title>
+    <title>PROJECT : DELTA - Tarifs & Info Bots Discord</title>
 </head>
 
 <body>
     <nav>
-        <button class="menu-toggle">☰</button> <!-- Icône du menu -->
+        <button class="menu-toggle">☰</button>
         <div class="menu-container">
             <ul class="menu" id="menu">
                 <li><a href="./index.html">Accueil</a></li>
@@ -26,22 +26,48 @@
 
     <section class="tarifs-section">
         <h2 class="titre-tarifs">Tarifs & Info Bots Discord</h2>
-        <div class="description-embed">
-            <p class="description-text">
-                Que vous soyez une communauté gaming, un serveur communautaire ou un projet professionnel,
-                nous développons des bots Discord 100% personnalisés selon vos besoins. 
-                Commandes sur mesure, systèmes d’économie, gestion d’événements, rôles automatiques, anti-raid, et bien plus encore.
-                Chaque bot est pensé pour être performant, sécurisé et simple d’utilisation.
-            </p>
+
+        <div class="tarifs-container">
+            <div class="description-embed">
+                <h3>Fonctionnalités incluses :</h3>
+                <p>💻 Un bot ultra-complet, 100% personnalisable pour faire passer ton serveur au niveau supérieur !</p>
+                <p>🔧 Fonctionnalités incluses :</p>
+                <p>--- Bienvenue --- Antiraid --- Logs --- Auto-modération --- Modération --- Tickets --- </p>
+                <p>--- Soutien --- Counters --- Embed --- Rolemenu --- Economie ---</p>
+                <p>Nom, avatar, design... Tout est personnalisable selon ton style !*</p>
+            </div>
         </div>
+
         <div class="tarifs-container">
             <div class="tarif-card">
                 <h3>Mensuel</h3>
-                <p>Entre <strong>0.50€</strong> et <strong>3.50€</strong></p>
+                <p class="prix-tarif">💶 Entre <strong>0,50€</strong> et <strong>2,50€</strong></p>
+                <p class="texte-tarif">💴 Entre <strong>3,500 coins</strong> et <strong>7,500 coins</strong></p>
+                <p>(varie selon la complexité et le développeur assigné)</p>
             </div>
             <div class="tarif-card">
-                <h3>All Time</h3>
-                <p>Entre <strong>5€</strong> et <strong>25€</strong></p>
+                <h3>Annuel</h3>
+                <p class="prix-tarif">💶 Entre <strong>5€</strong> et <strong>25€</strong></p>
+                <p class="texte-tarif">💴 Entre <strong>15,000 coins</strong> et <strong>75,000 coins</strong></p>
+                <p>(varie selon la complexité et le développeur assigné)</p>
+            </div>
+            <div class="tarif-card">
+                <h3>À vie (LifeTime)</h3>
+                <p class="prix-tarif">💶 Entre <strong>10€</strong> et <strong>50€</strong></p>
+                <p class="texte-tarif">💴 Entre <strong>30,000 coins</strong> et <strong>150,000 coins</strong></p>
+                <p>(varie selon la complexité et le développeur assigné)</p>
+            </div>
+        </div>
+
+        <div class="tarifs-container">
+            <div class="description-embed">
+                <h3>Moyens de paiement :</h3>
+                <p>💳 Choisis le moyen de paiement qui te convient le mieux :</p>
+                <p>💰 Paiements acceptés : Euros (€) ou Coins (monnaie du serveur)</p>
+                <p>PayPal : <a href="https://www.paypal.me/IseyGo" target="_blank" rel="noopener noreferrer">paypal.me/IseyGo</a></p>
+                <p>Nitro Boost : Contacte @isey en MP</p>
+                <p>Coins : Ticket <@isey</p>
+                <p>📩 Prêt à donner un coup de boost à ton serveur ? Contacte-nous dès maintenant !</p>
             </div>
         </div>
     </section>
@@ -54,52 +80,47 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>© 2025 - PROJECT : DELTA| Tous droits réservés.</p>
         </div>
-    
+
         <!-- Regroupe support + social pour le responsive -->
         <div class="footer-icons">
             <div class="footer-support">
                 <p>Support</p>
-                <a href="https://discord.gg/PzTHvVKDxN" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.gg/wG8jCA7CZV" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_support_logo.jpg" alt="Support Discord">
                 </a>
             </div>
-    
+
             <div class="footer-socials">
-                <a href="https://discord.gg/N4Re6Yck7y" target="_blank" rel="noopener noreferrer">
-                    <img class="logo_footer" src="../images/etherya_discord_logo.jpg" alt="Discord">
-                </a>
-                <a href="https://www.tiktok.com/@etherya.sy" target="_blank" rel="noopener noreferrer">
-                    <img class="logo_footer" src="../images/etherya_tiktok_logo.jpg" alt="TikTok">
-                </a>
-                <a href="https://www.instagram.com/sy_etherya/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/delta.projet/" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_instagram_logo.jpg" alt="Instagram">
                 </a>
-                <a href="https://x.com/EtheryaSy" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/Delta_Proj_Isey" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_twitter_logo.jpg" alt="X">
                 </a>
             </div>
         </div>
     </footer>
+    <!-- Script Scroll + Menu -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.querySelector(".menu-toggle");
             const menu = document.querySelector(".menu");
-    
-            menuToggle.addEventListener("click", function() {
+
+            menuToggle.addEventListener("click", function () {
                 menu.classList.toggle("show");
             });
-    
-            // Fermer le menu quand on clique en dehors
-            document.addEventListener("click", function(event) {
+
+            document.addEventListener("click", function (event) {
                 if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
                     menu.classList.remove("show");
                 }
             });
         });
-    </script>   
+    </script>
 </body>
+
 </html>

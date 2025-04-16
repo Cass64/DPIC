@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
-    <title>PROJECT : DELTA</title>
+    <title>PROJECT : DELTA - Tarifs & Info Sites Internet/Web</title>
 </head>
 
 <body>
     <nav>
-        <button class="menu-toggle">☰</button> <!-- Icône du menu -->
+        <button class="menu-toggle">☰</button>
         <div class="menu-container">
             <ul class="menu" id="menu">
                 <li><a href="./index.html">Accueil</a></li>
@@ -23,6 +23,56 @@
             </ul>
         </div>
     </nav>
+
+    <section class="tarifs-section">
+        <h2 class="titre-tarifs">Tarifs & Info Sites Internet/Web</h2>
+
+        <div class="description-embed">
+            <p>
+                ❄️ <strong>Tu veux un site web 100 % sur-mesure ?</strong><br>
+                🎉 Bienvenue dans le salon <strong>Achat de Sites Web</strong> ! Ici, tu peux commander un site
+                <strong>parfaitement adapté à ton projet</strong>.
+            </p>
+        </div>
+
+        <div class="tarifs-container">
+            <div class="tarif-card">
+                <h3>🔹 Site personnalisé clé en main</h3>
+                <p>💶 À partir de <strong>5€</strong> / <strong>3 500 Coins</strong> jusqu’à <strong>150€</strong> / <strong>1 050 000 Coins</strong></p>
+            </div>
+        </div>
+
+        <div class="description-embed">
+            <h3>📌 Moyens de paiement :</h3>
+            <p>💳 Euros (€) ou Coins (monnaie du serveur)</p>
+            <p>🌺 Les tarifs varient selon la complexité : un devis clair et détaillé te sera fourni après discussion.</p>
+        </div>
+
+        <div class="description-embed">
+            <h3>💡 Comment passer commande ?</h3>
+            <ol>
+                <li>🎫 Dirige toi sur le serveur Discord pour <strong>ouvrir un ticket</strong></li>
+                <li>📝 Décris ton projet : type de site, fonctionnalités, style graphique, budget, etc.</li>
+                <li>📩 On revient rapidement vers toi avec un <strong>devis personnalisé</strong> et un <strong>délai précis</strong>.</li>
+            </ol>
+        </div>
+
+        <div class="description-embed">
+            <h3>🌌 Pourquoi nous choisir ?</h3>
+            <ul>
+                <li>🔹 Design moderne, unique et responsive</li>
+                <li>🔹 Optimisation SEO & performance</li>
+                <li>🔹 Sécurité et options d’hébergement</li>
+                <li>🔹 Suivi complet, du début à la mise en ligne</li>
+            </ul>
+        </div>
+
+        <div class="description-embed">
+            <p>🆘 Des questions ? Ouvre un ticket ou mentionne un membre du staff.</p>
+            <p>🙏 Merci pour ta confiance, et à très vite sur <strong>Project : DELTA</strong> !</p>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-top">
             <div class="footer-content">
@@ -31,52 +81,46 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>© 2025 - PROJECT : DELTA| Tous droits réservés.</p>
         </div>
-    
+
         <!-- Regroupe support + social pour le responsive -->
         <div class="footer-icons">
             <div class="footer-support">
                 <p>Support</p>
-                <a href="https://discord.gg/PzTHvVKDxN" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.gg/wG8jCA7CZV" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_support_logo.jpg" alt="Support Discord">
                 </a>
             </div>
-    
+
             <div class="footer-socials">
-                <a href="https://discord.gg/N4Re6Yck7y" target="_blank" rel="noopener noreferrer">
-                    <img class="logo_footer" src="../images/etherya_discord_logo.jpg" alt="Discord">
-                </a>
-                <a href="https://www.tiktok.com/@etherya.sy" target="_blank" rel="noopener noreferrer">
-                    <img class="logo_footer" src="../images/etherya_tiktok_logo.jpg" alt="TikTok">
-                </a>
-                <a href="https://www.instagram.com/sy_etherya/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/delta.projet/" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_instagram_logo.jpg" alt="Instagram">
                 </a>
-                <a href="https://x.com/EtheryaSy" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/Delta_Proj_Isey" target="_blank" rel="noopener noreferrer">
                     <img class="logo_footer" src="../images/etherya_twitter_logo.jpg" alt="X">
                 </a>
             </div>
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.querySelector(".menu-toggle");
             const menu = document.querySelector(".menu");
-    
-            menuToggle.addEventListener("click", function() {
+
+            menuToggle.addEventListener("click", function () {
                 menu.classList.toggle("show");
             });
-    
-            // Fermer le menu quand on clique en dehors
-            document.addEventListener("click", function(event) {
+
+            document.addEventListener("click", function (event) {
                 if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
                     menu.classList.remove("show");
                 }
             });
         });
-    </script>   
+    </script>
 </body>
+
 </html>
