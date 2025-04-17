@@ -720,3 +720,29 @@ body.coins-page .titre-tarifs {
         font-size: 1.8rem;
     }
 }
+
+/* ----------------- Bot Promo ----------------- */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.bot-promo .bot-link {
+    font-family: 'Alkatra', sans-serif;
+    font-size: 0.9rem;
+    color: #ffd700;
+    background: #1e1e1e;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+.bot-promo .bot-link:hover {
+    background: #333;
+    transform: scale(1.05);
+}
