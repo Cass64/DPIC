@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css?v=2.1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="128x128" href="../images/favicon.png">
+    <title>PROJECT : DELTA - Infos Coins</title>
+</head>
+
+<body class="coins-page">
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <div class="menu-container">
+            <ul class="menu" id="menu">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./bot_discord.html">Tarifs & Info Bots Discord</a></li>
+                <li><a href="./graphisme.html">Tarifs & Info Graphisme</a></li>
+                <li><a href="./serveur_discord.html">Tarifs & Info Serveur Discord</a></li>
+                <li><a href="./site_internet.html">Tarifs & Info Sites Internet/Web</a></li>
+                <li id="page_actuelle"><a href="#">Informations Coins</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="tarifs-section">
+        <h2 class="titre-tarifs">Informations sur les Coins</h2>
+
+        <div class="tarifs-container">
+            <div class="description-embed coins-block coins-general">
+                <h3>💰 Comment obtenir des Coins ?</h3>
+                <p>Nous utilisons un système économique géré par <strong>&lt;@isey&gt;</strong>, qui vous
+                    permet de gagner des Coins gratuitement via différentes méthodes. Ces Coins servent ensuite de
+                    monnaie d’échange pour obtenir des créations.</p>
+            </div>
+        </div>
+
+        <div class="tarifs-container">
+            <div class="description-embed coins-block coins-methodes">
+                <h3>🎯 Quelles sont les méthodes pour gagner des Coins ?</h3>
+                <ul>
+                    <li>👀 Participez activement aux discussions textuelles ou vocales</li>
+                    <li>🌐 Découvrez des méthodes alternatives</li>
+                    <li>🎁 Avantages Boosters : gains quotidiens, rôles exclusifs, services gratuits…</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tarifs-container">
+            <div class="description-embed coins-block coins-commandes">
+                <h3>🧾 Commandes utiles</h3>
+                <ul>
+                    <li><strong>+daily / +dy / /daily</strong> ↬ 1 à 250 Coins toutes les 24h</li>
+                    <li><strong>+work / +wk / /work</strong> (VIP) ↬ 1 à 150 Coins toutes les 6h</li>
+                    <li><strong>+slut / /slut</strong> (VIP – risque de perte) ↬ 1 à 75 Coins toutes les 3h</li>
+                    <li><strong>+crime / /crime</strong> (VIP – risque de perte) ↬ 1 à 50 Coins toutes les heures</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tarifs-container">
+            <div class="description-embed coins-block coins-boost">
+                <h3>🚀 Comment booster tes gains ?</h3>
+                <ul>
+                    <li>🆙 +daily → Jusqu’à 250 Coins / jour</li>
+                    <li>💬 Active-toi dans le chat → Gagne en discutant</li>
+                    <li>🎧 Reste en vocal → Coins chaque minute</li>
+                    <li>✏️ Ajoute “Project : Delta” à ton statut → bonus + rôle</li>
+                    <li>👥 Invite tes amis → 500 Coins / ami</li>
+                    <li>📣 Réseaux sociaux → 500 Coins par post (utilise ton lien)</li>
+                    <li>🤖 Ajoute le bot sur ton serveur → 750 Coins / serveur (30 membres mini)</li>
+                    <li>📤 Vote & bump → Jusqu’à 24x / jour :
+                        <ul>
+                            <li>&lt;@DL&gt; → Vote : 20 | Bump : 10</li>
+                            <li>&lt;@DISBOARD&gt; → Vote : 10 | Bump : 10</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>📩 <strong>Ouvre un ticket dans &lt;#︱🔖・𝖲upport&gt;</strong> pour réclamer tes récompenses !
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-content">
+                <a href="index.html">
+                    <img class="logo_footer" src="../images/etherya_site_logo.jpg" alt="img_logo_footer">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 - PROJECT : DELTA | Tous droits réservés.</p>
+        </div>
+
+        <div class="footer-icons">
+            <div class="footer-support">
+                <p>Support</p>
+                <a href="https://discord.gg/wG8jCA7CZV" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_support_logo.jpg" alt="Support Discord">
+                </a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/delta.projet/" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_instagram_logo.jpg" alt="Instagram">
+                </a>
+                <a href="https://x.com/Delta_Proj_Isey" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="../images/etherya_twitter_logo.jpg" alt="X">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menu = document.querySelector(".menu");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("show");
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                    menu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

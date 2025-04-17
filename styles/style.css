@@ -629,3 +629,94 @@ nav {
     line-height: 1.6;
     margin-top: 10px;
 } 
+
+/* === PAGE COINS – STYLE SPÉCIFIQUE === */
+body.coins-page .description-embed.coins-block {
+    background-color: rgba(58, 51, 51, 0.685);
+    padding: 20px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(71, 62, 62);
+    border-left: 4px solid #5865F2;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #f0f0f0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    backdrop-filter: blur(4px);
+}
+
+body.coins-page .description-embed.coins-block:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+body.coins-page .description-embed.coins-block h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+body.coins-page .description-embed.coins-block p {
+    margin: 0 0 12px;
+    color: #e0e0e0;
+}
+
+body.coins-page .description-embed.coins-block ul {
+    columns: 2;
+    column-gap: 2rem;
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+body.coins-page .description-embed.coins-block li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 10px;
+    color: #dddddd;
+}
+
+body.coins-page .description-embed.coins-block li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: #5865F2;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+body.coins-page .description-embed.coins-block ul ul {
+    columns: 1;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-top: 8px;
+    border-left: 2px solid rgba(88, 101, 242, 0.3);
+}
+
+body.coins-page .tarifs-container {
+    margin: 0 auto 30px;
+    max-width: 900px;
+    padding: 0 15px;
+}
+
+body.coins-page .titre-tarifs {
+    font-size: 2.3rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    body.coins-page .description-embed.coins-block ul {
+        columns: 1;
+    }
+
+    body.coins-page .description-embed.coins-block {
+        font-size: 1rem;
+        padding: 18px 20px;
+    }
+
+    body.coins-page .titre-tarifs {
+        font-size: 1.8rem;
+    }
+}

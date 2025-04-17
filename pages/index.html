@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="128x128" href="../images/favicon.png">
     <title>PROJECT : DELTA</title>
 </head>
 
@@ -20,6 +21,7 @@
                 <li><a href="./graphisme.html">Tarifs & Info Graphisme</a></li>
                 <li><a href="./serveur_discord.html">Tarifs & Info Serveur Discord</a></li>
                 <li><a href="./site_internet.html">Tarifs & Info Sites Internet/Web</a></li>
+                <li><a href="./coins.html">Informations Coins</a></li>
             </ul>
         </div>
     </nav>
@@ -36,7 +38,7 @@
     </div>
     <h2 class="titre2_accueil">CASS64</h2>
     <div class="embed_accueil">
-        <img class="img_embed_accueil" src="../images/pp_isey.png" alt="img_embed">
+        <img class="img_embed_accueil" src="../images/pp_cass.png" alt="img_embed">
         <div class="text_embed_accueil">
             <p>
                 Tout a commencé lorsque cass64, déjà plongé dans le développement web en créant son propre site,
@@ -48,7 +50,7 @@
     </div>
     <h2 class="titre3_accueil">ISEY</h2>
     <div class="embed_accueil2">
-        <img class="img_embed_accueil" src="../images/pp_cass.png" alt="img_embed">
+        <img class="img_embed_accueil" src="../images/pp_isey.png" alt="img_embed">
         <div class="text_embed_accueil">
             <p>
                 Voyant cass64, il lui demande de développer un bot sur mesure pour gérer
@@ -73,7 +75,6 @@
             </p>
         </div>
     </div>
-    <button id="scroll-button" class="scroll-button">↓</button>
     <footer>
         <div class="footer-top">
             <div class="footer-content">
@@ -106,17 +107,9 @@
             </div>
         </div>
     </footer>
-    <!-- Script Scroll + Menu -->
+    <!-- Menu -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const scrollButton = document.getElementById('scroll-button');
-            scrollButton.addEventListener('click', () => {
-                window.scrollBy({
-                    top: window.innerHeight,
-                    behavior: 'smooth'
-                });
-            });
-
             const menuToggle = document.querySelector(".menu-toggle");
             const menu = document.querySelector(".menu");
 
